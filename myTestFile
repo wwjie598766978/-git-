@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>科目二打卡</title>
+    <!-- Required CSS files -->
+    
+        <link rel="shortcut icon" type="image/x-icon" href="//img.58cdn.com.cn/jxedt/logos/favicon.ico">    <meta charset="UTF-8">
+    <meta name="baidu-site-verification" content="JU12JdpLM3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//j1.58cdn.com.cn/dist/jxedt/pc/lib/css/reset.css?_t=20180710">
+    <link rel="stylesheet" href="//j1.58cdn.com.cn/dist/jxedt/pc/lib/swiper/idangerous.swiper.css?_t=20180710">
+	<script>var _trackURL = '{"cate":"NA","area":"NA","pagetype":"footer","page":"info"}'</script>
+	<script>var _trackURL = '{"cate":"NA","area":"NA","pagetype":"header","page":"info"}'</script>
+	<script src="http://hm.baidu.com/hm.js?_t=20180710"></script>
+	<link rel="stylesheet" href="static/3rd/dist/css/zui.min.css">
+	<script type="text/javascript" src="static/3rd/dist/lib/jquery/jquery.js"></script>
+	<script type="text/javascript" src="static/3rd/dist/js/zui.min.js" ></script>
+	<script type="application/javascript" src="static/3rd/layer-v3.1.1/layer/layer.js"></script>
+	
+	<script src="static/js/indexAction.js?version=1"></script>
+	<link href="static/css/indexSet.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="//j1.58cdn.com.cn/dist/jxedt/pc/products/jxregister/css/comm_style.css?_t=20181207">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_949786_v8zsbvaxz6p.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+	body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+	#allmap {float:left; width: 100%; height:550px; overflow: hidden;}
+	#result {width:100%;font-size:12px;}
+	dl,dt,dd,ul,li{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	p{font-size:12px;}
+	dt{
+		font-size:14px;
+		font-family:"微软雅黑";
+		font-weight:bold;
+		border-bottom:1px dotted #000;
+		padding:5px 0 5px 5px;
+		margin:5px 0;
+	}
+	dd{
+		padding:5px 0 0 5px;
+	}
+	li{
+		line-height:28px;
+	}
+	</style>
+	<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=PWU0LWOOqigkOKOvA8V4X8xlzE4mnWYM"></script>
+	<!--加载鼠标绘制工具-->
+	<script type="text/javascript" src="//api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+	<link rel="stylesheet" href="//api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+	<!--加载检索信息窗口-->
+	<script type="text/javascript" src="//api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="//api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+	
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="static/3rd/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="static/3rd/assets/css/barfiller.css">
+    <link rel="stylesheet" href="static/3rd/assets/css/animate.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="static/3rd/assets/css/slicknav.css">
+    <link rel="stylesheet" href="static/3rd/assets/css/main.css">
+	<link rel="stylesheet" href="static/3rd/dist/css/zui.min.css">
+	  <script type="text/javascript" src="static/js/userLogout.js" ></script> 
+	<script type="text/javascript" src="static/3rd/dist/lib/jquery/jquery.js"></script>
+	<script type="text/javascript" src="static/3rd/dist/js/zui.min.js" ></script>
+	<script type="application/javascript" src="static/3rd/layer-v3.1.1/layer/layer.js"></script>
+	  <script type="text/javascript" src="http://api.map.baidu.com/library/GeoUtils/1.2/src/GeoUtils.js"></script>
+	<style>
+		.progressmain{
+			padding-top:30px;
+			width: 40%;
+			margin: 0 auto;
+		}
+		.main{
+			padding-top:20px;
+			width: 50%;
+			margin: 0 auto;
+			padding-bottom: 40px;
+		}
+		.outBotton{
+			margin: 0 auto;
+			width: 60%;
+			padding-top:30px;
+		}
+		.photoSet{
+			margin: 0 auto;
+			margin-top:20px;
+			padding-left: 40px;
+		}
+		.interBotton{
+			text-align: center;
+			
+		}
+		.startBotton{
+			text-align: center;
+		}
+		.thisButtons{
+			padding-bottom: 40px;
+		}
+		
+					.comment-header-vip-describe .jxedt-VIP{
+				font-size: 14px;
+				color: #00c356;
+			}
+
+			.main{
+				
+				margin: 0 auto;
+				width: 98%;
+				padding-bottom: 50px;
+			}
+	</style>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+<div class="nav-wrap">
+    <nav class="comment-header-nav">
+        <!-- 联系 -->
+        <div class="comment-header-contact">
+            <div class="comment-header-left">
+                <span class="comment-header-vip-describe">
+                    <i class="iconfont jxedt-VIP"></i>
+                    <a href="javascript:void(0);">VIP真题</a>
+                </span>
+                <span class="comment-header-phone-describe">驾校一点通售后服务热线：
+                    <span class="comment-header-phone">XXX-XXX-XXXX</span>
+                </span>
+                                <div class="comment-login-1" style="display:inline-block;">
+                    <!--<span id="getdate"></span>-->
+                  <span class="btn-span"><a onclick="page('userLogin')" >登录</a></span>
+                    <span class="btn-span"><a onclick="page('registerPage')"  target="_blank" >注册</a></span>
+                 </div>
+                            </div>
+            <div class="comment-header-right">
+                
+                <div class="comment-header-app">
+             
+                </div>
+                 <a class="right-text" onclick="page('addSchool')">驾校入驻</a>
+                <a class="right-text" target="_blank" href="http://127.0.0.1:8081/mgr/page.act">驾校后台</a>
+           </div>
+        </div>
+        <!-- 搜索 -->
+        <div class=" comment-header-search">
+           <div class="comment-header-search-logo" >
+            
+                    <img src="static/img/0721.png"   alt="">
+               
+            </div>
+            
+            
+            <div class="comment-header-search-text">
+            	<div class="input-group">
+  					<div class="input-control search-box search-box-circle has-icon-left has-icon-right search-example" id="searchboxExample">
+    				<input id="searchInput" type="search" class="form-control search-input" placeholder="驾校搜索">
+    				<label for="inputSearchExample3" class="input-control-icon-left search-icon"></label>
+  					</div>
+  					<span class="input-group-btn">
+   					 <button class="btn btn-success" type="button" onclick="searchSchool()">搜索</button>
+  					</span>
+				</div>
+               <!-- <input id="searchInput" class="search-content" type="text" placeholder="请输入关键字：(驾校名称)">
+                <ul class="search-content-toggle">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" data-search-type="jiaxiao" class="dropdown-toggle" id="tutorial">
+                            驾校
+                        </a>
+                        
+                    </li>
+                </ul>-->
+                  <!-- <button class="btn btn-success " type="button" onclick="searchSchool()">成功</button>-->
+                <!--<span class="comment-header-search-btn" onclick="searchSchool()">搜索</span>-->
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div>
+            <div class="comment-header-menu">
+           <ul class="comment-header-menu-ul">
+                    <li class="start-menu">
+                        <a onclick="page('index')"   style="color: rgb(0, 195, 86);">首页</a>
+                    </li>
+                    <li class="header-menu-dropdown">
+                        <a onclick="page('simulatedExam')"  style="color: rgb(74, 74, 74);">模拟考试</a>
+                    </li>
+                    <li>
+                        <a onclick="page('tNewsDetail')"  style="color: rgb(74, 74, 74);">行业动态</a>
+                    </li>
+              
+									    <li><a onclick="page('PeriodSetLevel2')"  >科目二模拟打卡</a></li>
+										<li><a onclick="page('PeriodSetLevel3')" >科目三模拟打卡</a></li>
+								
+                </ul>
+            </div>
+        </div>
+        
+
+</div>
+
+		<hr>
+		
+		<!--这里放主要内容-->
+			<!--学时进度-->
+
+		<!--读卡退卡-->
+			<div class="with-padding">
+				<div class="main">
+		<div class="thisButtons">
+		<div class="interBotton col-xs-8">
+			<div class="input-group">
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="button"><i class="icon icon-credit"></i>&nbsp;账号</button>
+				</span>
+				<input type="text" class="form-control" placeholder="请输入您的账号" id="inputUserId">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button" onclick="readCard()">读卡</button>
+				</span>
+			</div>
+		</div>
+		<div class="startBotton col-xs-2">
+			<button class="btn btn-info" type="button" onclick="startCard()">开始打卡</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button class="btn btn-warning" type="button" onclick="outCard()">退卡(结束打卡)</button>
+		</div>
+
+		</div>
+		<!--摄像头区域-->
+	
+		</div>
+					<div class="panel" style="float:left;width:45% ;">
+					<div align="center" ><h2>人脸识别区域</h2></div>
+					<div class="panel"  style="float:left; width:100%">	
+					<div style="float:left;width:10% ;height:15%"><img  id="idPhoto" alt="" src="static/img/head1.jpg"></div>
+				
+									<div style="float:left;" >
+		<h3  id="stuInfo">学员姓名: 打卡阶段:科目二</h3>
+	 	
+		</div>
+					</div>
+			<div class="panel"  >	
+					<div  class="photoSet">
+			<video id="video" width="295px" height="413px" autoplay="autoplay"></video>
+			<canvas id="canvas" width="295px" height="413px"></canvas>
+		</div>
+					</div>
+	
+		</div>
+
+<div class="panel" style="float:left; width: 54%; height:625px;">
+	<div align="center" ><h2>您所在驾校的范围</h2></div>
+    <div id="allmap" style="overflow:hidden;zoom:1;position:relative;">    
+        <div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+    </div>
+	</div>
+			</div>
+	
+
+		
+       <!--学员账号-->
+       <input id="userNum" type="hidden">
+       <!--学员id-->
+       <input id="userId" type="hidden">
+       <!--打卡表id-->
+       <input id="periodId" type="hidden">
+      <!--用户所在经纬度-->
+    <input id="xPoint" type="hidden">
+    <input id="yPoint" type="hidden">
+
+    <!--Required JS files-->
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="static/3rd/assets/js/vendor/popper.min.js"></script>
+<script src="static/3rd/assets/js/vendor/bootstrap.min.js"></script>
+<script src="static/3rd/assets/js/vendor/owl.carousel.min.js"></script>
+<script src="static/3rd/assets/js/vendor/isotope.pkgd.min.js"></script>
+<script src="static/3rd/assets/js/vendor/jquery.barfiller.js"></script>
+<script src="static/3rd/assets/js/vendor/loopcounter.js"></script>
+<script src="static/3rd/assets/js/vendor/slicknav.min.js"></script>
+<script src="static/3rd/assets/js/active.js"></script>
+
+</body>
+<script type="text/javascript">
+function page(url){
+	window.location.href = "page.act?p=" +url+"&a="+new Date();
+}
+</script>
+<script type="text/javascript">
+	
+// 百度地图API功能
+var overlays = [];
+var obsCircleMapVal = null;
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(116.331398,39.897445);
+map.centerAndZoom(point,12);
+map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+autoLocaltion();
+function autoLocaltion(){
+	layer.msg("正在根据浏览器自动定位...");
+	var index = layer.load(1, {
+		  shade: [0.1,'#fff'] //0.1透明度的白色背景
+		});
+}
+
+
+
+
+function getNowlocal(){
+	
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			
+			var myIcon = new BMap.Icon("static/img/7788.png", new BMap.Size(50,25));
+			var marker = new BMap.Marker(r.point,{icon:myIcon});  
+			
+			map.addOverlay(marker);
+			var label = new BMap.Label("您的教练车位置",{offset:new BMap.Size(20,-20)});
+			marker.setLabel(label);
+			
+			map.panTo(r.point);
+			layer.closeAll();
+			$("#xPoint").val(r.point.lng);
+			$("#yPoint").val(r.point.lat);
+			layer.msg("自动定位成功");				
+			
+			console.log($("#xPoint").val());
+			console.log($("#yPoint").val());
+		}
+		else {
+			layer.closeAll();
+			layer.msg("自动定位失败,请检查车辆gps");
+		
+		}        
+	},{enableHighAccuracy: true})
+}
+
+getNowlocal();
+
+
+
+function IsInPolygon(){
+
+   var  point = new BMap.Point($("#xPoint").val(),$("#yPoint").val());
+   var marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+    
+    console.log(obsCircleMapVal);
+
+    console.log(point);
+    
+    if(BMapLib.GeoUtils.isPointInPolygon(point,obsCircleMapVal)){
+    	layer.msg("您处在驾校区域范围,请您对准摄像头，打卡前需要进行人脸识别");
+    	return true;
+    }else{
+　　　layer.msg("您不在驾校区域范围内！");
+		return false;
+    }
+    
+}
+
+
+var removeMarker = function(e,ee,marker){
+	map.removeOverlay(marker);
+}
+//创建右键菜单
+var markerMenu=new BMap.ContextMenu();
+markerMenu.addItem(new BMap.MenuItem('删除',removeMarker.bind(marker)));
+
+var marker = new BMap.Marker(point);
+map.addOverlay(marker);
+marker.addContextMenu(markerMenu);
+
+
+
+
+//读卡
+function readCard() {
+	var inputUserIdObject = $('#inputUserId');//账号
+	if(inputUserIdObject==null || inputUserIdObject.val()==''){
+		layer.alert("请输入您的账号！");
+		return;
+	}
+	$("#userNum").val(inputUserIdObject.val());
+	$.ajax({
+		url:'selectAllPeriodInfo.act',
+		type:'POST',
+		dataType:'JSON',
+		data:{userNum:$('#inputUserId').val(),periodLevel:"2"},
+		success:function(msg){
+			if(msg.id == 1){
+				
+				$("#idPhoto").attr('src',"getPhoto.act?fileSavePath="+msg.datas.fileSavePath);
+				var thePeriod = msg.datas.thePeriod;
+				var stuId = msg.datas.stuId;
+				$("#userId").val(stuId);
+				var stuName = msg.datas.stuName;
+				layer.msg("欢迎您，"+stuName);
+				$("#stuInfo").text("学员姓名:"+stuName+" 打卡阶段:科目二");
+				$.ajax({
+					url : "stuMaps.act",
+					type : "POST",
+					data:{userNum:$('#inputUserId').val()},
+					dataType : "JSON",
+					success : function(result) {
+					//	$("#imgId").attr('src',path); 
+						
+						var point =result.datas.data;
+						
+						var newPoint =point.split("/");
+						
+						if(newPoint[1]!=""){
+							
+						  	   var pot = [];
+					           pot = newPoint[1].split(";");// 圆半径点通过分号分割
+					           pot1=pot[0].split(",");
+					           map.centerAndZoom(new BMap.Point(pot1[0],pot1[1]), 12); // 分割后的坐标作为起始坐标
+					           var circle = new BMap.Circle(new BMap.Point(pot1[0],pot1[1]),pot[1],{fillColor:"red", strokeWeight: 1 ,fillOpacity: 0.3, strokeOpacity: 0.3});
+					             map.addOverlay(circle);
+					             obsCircleMapVal =circle;
+						}else{
+						 	   var pot = [];
+					           pot = newPoint[0].split(";");// 圆半径点通过分号分割
+					           pot1=pot[0].split(",");
+					           map.centerAndZoom(new BMap.Point(pot1[0],pot1[1]), 12); // 分割后的坐标作为起始坐标
+					           var circle = new BMap.Circle(new BMap.Point(pot1[0],pot1[1]),pot[1],{fillColor:"red", strokeWeight: 1 ,fillOpacity: 0.3, strokeOpacity: 0.3});
+					             map.addOverlay(circle);
+					             obsCircleMapVal =circle;
+						}
+							
+							
+					},
+					error : function(res) {
+						layer.alert("未知错误!")
+					}
+				});			
+				
+			}else{
+				layer.msg(msg.message);
+			}
+		},
+		error:function(msg){
+			layer.alert("请联系管理员");
+		}
+	});
+}
+//获得video摄像头区域
+let video = document.getElementById("video");
+
+function readUser() {
+	//获得Canvas对象
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext('2d');
+    ctx.drawImage(video, 0, 0, 295, 413);
+    //获取完整的base64编码
+    this.img=canvas.toDataURL('image/jpg');
+    this.img=img.split(',')[1];
+	$.ajax({
+		url:'insertPeriodInfo.act',
+		type:'POST',
+		dataType:'JSON',
+		data:{image2:this.img,stuId:$('#userId').val(),periodLevel:"2"},
+		success:function(msg){
+			if(msg.id == 1){
+				//设置打卡表id
+				var periodId = msg.datas.periodId;
+				$("#periodId").val(periodId);
+				layer.msg("通过识别，开始打卡");
+				showNowTime();
+			}else{
+				layer.msg(msg.message);
+				window.location.href = "page.act?p=PeriodSetLevel2";
+			}
+		},
+		error:function(msg){
+			layer.alert("请联系管理员");
+			window.location.href = "page.act?p=PeriodSetLevel2";
+		}
+	});
+}
+
+
+
+//开始打卡
+function startCard(){
+	
+	var userIdObject = $('#userId');//id
+	if(userIdObject==null || userIdObject.val()==''){
+		layer.msg("请先读卡！");
+		return;
+	}
+	
+	if(IsInPolygon()){
+		
+	}else{
+		return;
+	}
+	
+	getMedia();
+	setTimeout(readUser,3000);
+}
+function getMedia() {
+	
+	let constraints = {
+		    video: {width: 295, height: 413},
+		    audio: true
+		};
+	let promise = navigator.mediaDevices.getUserMedia(constraints);
+	promise.then(function (MediaStream) {
+	    video.srcObject = MediaStream;
+	    video.play();
+	}).catch(function (PermissionDeniedError) {
+	    console.log(PermissionDeniedError);
+	})
+}
+	    
+var theTime = 0;
+//每一分钟人脸识别一次
+function showNowTime(){
+	//获得Canvas对象
+	let canvas = document.getElementById("canvas");
+	let ctx = canvas.getContext('2d');
+	ctx.drawImage(video, 0, 0, 295, 413);
+	//获取完整的base64编码
+	this.img=canvas.toDataURL('image/jpg');
+	this.img=img.split(',')[1];
+	
+	var nowData = new Date();
+	theTime = theTime+1;
+	if(theTime>1){
+		
+
+		
+		$.ajax({
+			url:'headPortait.act',
+			type:'POST',
+			dataType:'JSON',
+			data:{image2:this.img,userNum:$('#userNum').val()},
+			success:function(msg){
+				if(msg.id == 1){
+		   			
+					if(IsInPolygon()){
+						
+					}else{
+						layer.msg("您已离开驾校范围!");
+						stopNowDo();
+					}
+					
+				}else{
+	    			layer.msg(msg.message);
+	    			//强制结束打卡
+	    			stopNowDo();
+				}
+			},
+			error:function(msg){
+				//强制结束打卡
+    			stopNowDo();
+				layer.alert("请联系管理员");
+			}
+		});
+	}
+	setTimeout(showNowTime,1000*60);
+}
+//退卡
+function outCard(){
+	layer.confirm('您确定要退卡吗？', {
+		  btn: ['确定','取消'] //按钮
+		}, function(){
+			var userIdObject = $('#userId');//id
+			if(userIdObject==null || userIdObject.val()==''){
+				layer.msg("您还未读卡！");
+				return;
+			}
+			stopNowDo();
+		}, function(){
+		  
+		});
+}
+
+
+//强制结束打卡
+function stopNowDo(){	
+	$.ajax({
+		url:'updateEndTime.act',
+		type:'POST',
+		dataType:'JSON',
+		data:{periodId:$('#periodId').val()},
+		success:function(msg){
+			if(msg.id == 1){
+				window.location.href = "page.act?p=PeriodSetLevel2";
+			}else{
+    			layer.msg(msg.message);
+			}
+		},
+		error:function(msg){
+			layer.alert("请联系管理员");
+		}
+	});
+}
+function searchSchool(){
+	var searchInputObject = $('#searchInput');
+	/*if(searchInputObject==null || searchInputObject.val()==''){
+		//layer.alert("请输入搜索条件！");
+		return;
+	}else{*/
+		sessionStorage.setItem("searchInput",JSON.stringify($('#searchInput').val()));
+		window.location.href = "page.act?p=searchSchool";
+}
+		
+	</script>
+</html>
